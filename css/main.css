@@ -256,11 +256,61 @@ textarea {
   }
 }
 .order {
+  font-family: 'Clear Sans Bold';
   width: 100%;
   height: 1000px;
   background: #9f8cee;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #9f8cee), color-stop(66%, #86ade9));
   background: linear-gradient(to right, #9f8cee 50%, #86ade9 66%);
+}
+.order1-content {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1000px;
+  background-image: url("../img/bg/girl.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+.order1-text {
+  text-align: center;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  z-index: 2;
+}
+.order-head {
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  margin-bottom: 100px;
+}
+.order .servise-description {
+  color: #fff;
+  margin-bottom: 130px;
+}
+.button-white {
+  width: 404px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #f9ebcc;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.button-white:hover {
+  background-color: transparent;
+}
+.button-white a.servise-description {
+  display: block;
+  color: #7b8ce6;
+  padding: 20px 10px 15px;
+}
+.button-white a.servise-description:hover {
+  color: #f9ebcc;
+  text-decoration: none !important;
 }
 a.mouse_scroll {
   display: block;
