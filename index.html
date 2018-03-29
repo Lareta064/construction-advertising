@@ -57,16 +57,26 @@
 	        	<div class="header-title">
 	        		<h1>РАЗРАБОТКА ПРОЕКТОВ РЕКЛАМНЫХ КОНСТРУКЦИЙ</h1>
 	        	</div>
-	        	<div class="header__contact-form">
-	        		<p>Заполните форму на бесплатный расчет заявки и через 10 минут Вы узнаете стоимость и сроки</p>
-				<form class="top-form">
-					<input type="text" name="name" id="name" placeholder="введите ваше имя"/>
-					<input type="text" name="email" id="email" placeholder="введите ваш email"/>
-					<input type= "submit" value="получить расчет и сроки">
-					<input type="checkbox" id="subscribe"/>
-					<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label> 
-				</form>	
-	        	</div>
+	        	
+	        		<div class="popup" id="popup1">
+                        <div class="object">
+	        		       <p>Заполните форму на бесплатный расчет заявки и через 10 минут Вы узнаете стоимость и сроки</p>
+						<form id="contact-form" action= "php/mail.php" method= "POST"> 
+							<!-- Hidden Required Fields -->
+              					<input type="hidden" name="project_name" value="Куб Квадрат">
+              					<input type="hidden" name="admin_email" value="info@kubkvadrat.ru">
+              					<input type="hidden" name="form_subject" value="Сообщение с сайта">
+            					<!-- END Hidden Required Fields -->
+							<input type="text" name="name" id="name" placeholder="введите ваше имя"/>
+							<input type="text" name="email" id="email" placeholder="введите ваш email"/>
+							<input type= "submit" value="получить расчет и сроки">
+							<input type="checkbox" id="subscribe"/>
+							<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label> 
+						</form>
+						<div id="answer"></div>    
+         				</div>
+    				</div>
+	        	
 	        	<button class="show_popup button-basic" rel="popup1"><a href="#">Получить расчет и сроки</a></button>
 	        </div>
 	        <!--Mouse scroll -->
@@ -82,36 +92,312 @@
 	          </a>
             <!--End Mouse scroll -->	
         </div>
-        
-
-        <!--title
-        <div class="header-title">
-        	<div class="row">
-        		<div class="container">
-        			<div class="col-sm-6">
-        				<div class="header-title__text">	
-        					<h1>РАЗРАБОТКА ПРОЕКТОВ РЕКЛАМНЫХ КОНСТРУКЦИЙ</h1>
-        				</div>	
-        			</div>
-        		</div>
-        	</div>
-        </div>-->
-        <!--//title-->
-        <!--contact form
-        <div class="header__contact-form">
-        	<p>Заполните форму на бесплатный расчет заявки и через 10 минут Вы узнаете стоимость и сроки</p>
-			<form class="top-form">
-				<input type="text" name="name" id="name" placeholder="введите ваше имя"/>
-				<input type="text" name="email" id="email" placeholder="введите ваш email"/>
-				<input type= "submit" value="получить расчет и сроки">
-				<input type="checkbox" id="subscribe"/>
-				<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label> 
-			</form>	
-        </div>-->
-        <!--//contact form-->
-
     </header>
+
     <!--первый экран-->
+    <!--о нас -->
+    <section class="aboutus">
+    	<div class="container">
+    		<h2 class="section-head">
+    			НЕМНОГО О НАС
+    		</h2>
+    		<div class="aboutus__block">
+    			<div class="aboutus__block-item paragraf-small">
+    				<img src="img/icons/icon1.png" class="img-responsive" alt="icon"/>
+    				<div class="aboutus__block-item-text">
+    					В течение недели после получения 
+						Вами работы мы осуществляем 
+						сопровождение, оказываем 
+						гарантированные бесплатные 
+						корректировки и доработки.
+    				</div>
+    			</div>
+
+    			<div class="aboutus__block-item paragraf-small">
+    				<img src="img/icons/icon2.png" class="img-responsive" alt="icon"/>
+    				<div class="aboutus__block-item-text">
+    					Отлаженный рабочий процесс, 
+						позволяет нам выполнить 
+						проект в короткие сроки. 
+						Минимальный срок выполнения 
+						проекта — от 2 часов.
+    				</div>
+    			</div>
+
+    			<div class="aboutus__block-item paragraf-small">
+    				<img src="img/icons/icon3.png" class="img-responsive" alt="icon"/>
+    				<div class="aboutus__block-item-text">
+    					Доставим курьером прямо к Вам 
+						в офис или домой в любую 
+						точку России. В удобное время. 
+						В любой день недели.
+    				</div>
+    			</div>
+
+    			<div class="aboutus__block-item paragraf-small">
+    				<img src="img/icons/icon4.png" class="img-responsive" alt="icon"/>
+    				<div class="aboutus__block-item-text">
+    					Самые низкие цены. Предоплата 
+						при заказе чертежей не более 50%. 
+						Стоимость выполнения от 5000р.
+    				</div>
+    			</div>
+
+    			<div class="aboutus__block-item paragraf-small">
+    				<img src="img/icons/icon5.png" class="img-responsive" alt="icon"/>
+    				<div class="aboutus__block-item-text">
+    					Мы используем
+						только современные 
+						технологиидля достижения 
+						лучшего результата
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <!--о нас -->
+    <!--наши услуги -->
+    <main class="service">
+    	<h2 class="section-head">
+    			НАШИ УСЛУГИ
+    	</h2>
+    	<!--услуга1-->
+    	<section class="service__block block-grey">
+    		<div class="container block">
+	    		<div class="row service__block1">
+	            		<div class="col-sm-6">
+	            			<div class="service__block-img block-img1">
+	            				<img src="img/bg/service1.png" class="img-responsive" alt="">
+	            			</div>	
+	            		</div>
+	            		<div class="col-sm-6">
+	            			<div class="service__block-text">
+		            			<h3 class="servise-description">Разработка проектной и 
+									рабочей документации (КМ, 
+									КМД, КЖ) - конструкторская 
+									часть (чертежи несущих 
+									конструкций, узлов 
+									крепления)</h3>
+								<p class="section-paragraf">Рабочий проект рекламной конструкции,
+									содержащий все необходимое</p>
+								<button class="show_popup button-basic button-service1" rel="popup1"><a href="#">Заказать</a></button>		
+
+                            </div>
+	            		</div>
+	            </div>
+            </div>
+        </section>
+        <!--//услуга1-->
+
+        <!--услуга2-->
+        <section class="service__block block-white">
+    		<div class="container block">
+                <!--block2-->
+	            <div class="row service__block2">
+	            	
+	            		<div class="col-sm-6 col-sm-push-6">
+	            			<div class="service__block-img block-img2">
+	            				<img src="img/bg/service2.png" class="img-responsive" alt="">
+	            			</div>	
+	            		</div>
+	            		<div class="col-sm-6 col-sm-pull-6">
+	            			<div class="service__block-text block-align-left">
+		            			<h3 class="servise-description">Разработка проектной и 
+									рабочей документации (КМ, 
+									КМД, КЖ) - конструкторская 
+									часть (чертежи несущих 
+									конструкций, узлов 
+									крепления)</h3>
+								<p class="section-paragraf">Рабочий проект рекламной конструкции,
+									содержащий все необходимое</p>
+								<button class="show_popup button-basic button-service2" rel="popup1"><a href="#">Заказать</a></button>		
+
+                            </div>
+	            		</div>
+	            	
+	            </div>
+	        </div>    
+    	</section>
+    	<!--//услуга2-->
+
+    	<!--услуга3-->
+    	<section class="service__block block-grey">
+    		<div class="container block">
+	    		<div class="row service__block1">
+	            		<div class="col-sm-6">
+	            			<div class="service__block-img block-img3">
+	            				<img src="img/bg/service3.png" class="img-responsive" alt="">
+	            			</div>	
+	            		</div>
+	            		<div class="col-sm-6">
+	            			<div class="service__block-text">
+		            			<h3 class="servise-description">Разработка проектной и рабочей 
+									документации - расчетно-
+									пояснительная записка </h3>
+								<p class="section-paragraf">Рабочий проект рекламной конструкции, 
+									содержащий все необходимое для 
+									согласования и изготовления Вашей рекламы 
+									(описание установки, перечень материалов, 
+									крепежных элементов и других частей рекламного 
+									носителя, расчёты нагрузок (ветер, снег),
+									прочностные расчеты, расчеты электрообудования)</p>
+								<button class="show_popup button-basic button-service1" rel="popup1"><a href="#">Заказать</a></button>		
+
+                            </div>
+	            		</div>
+	            </div>
+            </div>
+        </section>
+        <!--//услуга3-->
+
+        <!--услуга4-->
+        <section class="service__block block-white">
+    		<div class="container block">
+                <!--block2-->
+	            <div class="row service__block2">
+	            	
+	            		<div class="col-sm-6 col-sm-push-6">
+	            			<div class="service__block-img block-img4">
+	            				<img src="img/bg/service4.png" class="img-responsive" alt="">
+	            			</div>	
+	            		</div>
+	            		<div class="col-sm-6 col-sm-pull-6">
+	            			<div class="service__block-text block-align-left">
+		            			<h3 class="servise-description">Разработка проекта первичного 
+									обследования, технической документации
+									и экспертного заключения;</h3>
+								<p class="section-paragraf">При подаче документов на согласование и 
+									регистрацию рекламной конструкции Вы должны 
+									предоставить техническую документацию 
+									(техрачеты) и экспертное заключение 
+									(экспертиза). Техническая документация должна 
+									быть разработана организацией, которая имеет 
+									допуск СРО на проектирование.</p>
+								<button class="show_popup button-basic button-service2" rel="popup1"><a href="#">Заказать</a></button>		
+
+                            </div>
+	            		</div>
+	            </div>
+	        </div>    
+    	</section>
+    	<!--//услуга4-->
+    	<!--услуга5-->
+    	<section class="service__block block-grey">
+    		<div class="container block">
+	    		<div class="row service__block1">
+	            		<div class="col-sm-6">
+	            			<div class="service__block-img block-img5">
+	            				<img src="img/bg/service5.png" class="img-responsive" alt="">
+	            			</div>	
+	            		</div>
+	            		<div class="col-sm-6">
+	            			<div class="service__block-text">
+		            			<h3 class="servise-description">Разработка предпроектных 
+									решений конструкции и 
+									объемов наружной 
+									рекламы для согласований</h3>
+								<p class="section-paragraf">Для более оптимального и рационального 
+									предложения по конструкциям рекламной 
+									установки нужны предварительные чертежи и 
+									объемы расходного материала рекламоносителя.</p>
+								<button class="show_popup button-basic button-service1" rel="popup1"><a href="#">Заказать</a></button>	
+                            </div>
+	            		</div>
+	            </div>
+            </div>
+        </section>
+        <!--//услуга5-->
+
+        <!--услуга6-->
+        <section class="service__block block-white">
+    		<div class="container block">
+                <!--block2-->
+	            <div class="row service__block2">
+	            	
+	            		<div class="col-sm-6 col-sm-push-6">
+	            			<div class="service__block-img block-img6">
+	            				<img src="img/bg/service6.png" class="img-responsive" alt="">
+	            			</div>	
+	            		</div>
+	            		<div class="col-sm-6 col-sm-pull-6">
+	            			<div class="service__block-text block-align-left">
+		            			<h3 class="servise-description">3D- визуализация проекта
+										(эскизы, макеты, модели, 
+										чертежи)</h3>
+								<p class="section-paragraf">Применим для полной и подробной
+										наглядности объекта. То, как будет
+										выглядеть будущая рекламная конструкия
+										покажет именно проект визуализации.</p>
+								<button class="show_popup button-basic button-service2" rel="popup1"><a href="#">Заказать</a></button>		
+
+                            </div>
+	            		</div>
+	            	
+	            </div>
+	        </div>    
+    	</section>
+    	<!--//услуга6-->
+
+    	<!--услуга7-->
+    	<section class="service__block block-grey">
+    		<div class="container block">
+	    		<div class="row service__block1">
+	            		<div class="col-sm-6">
+	            			<div class="service__block-img block-img7">
+	            				<img src="img/bg/service7.png" class="img-responsive" alt="">
+	            			</div>	
+	            		</div>
+	            		<div class="col-sm-6">
+	            			<div class="service__block-text">
+		            			<h3 class="servise-description">Проект производства 
+										работ (ППР)</h3>
+								<p class="section-paragraf">ППР - документация, в которой детально 
+									прорабатываются вопросы рациональной 
+									технологии и организации строительства 
+									рекламного объекта</p>
+								<button class="show_popup button-basic button-service1" rel="popup1"><a href="#">Заказать</a></button>	
+                            </div>
+	            		</div>
+	            </div>
+            </div>
+        </section>
+        <!--//услуга7-->
+
+        <!--услуга8-->
+        <section class="service__block block-white">
+    		<div class="container block">
+                <!--block2-->
+	            <div class="row service__block2">
+	            	
+	            		<div class="col-sm-6 col-sm-push-6">
+	            			<div class="service__block-img block-img8">
+	            				<img src="img/bg/service8.png" class="img-responsive" alt="">
+	            			</div>	
+	            		</div>
+	            		<div class="col-sm-6 col-sm-pull-6">
+	            			<div class="service__block-text block-align-left">
+		            			<h3 class="servise-description">Обследование состояния
+									зданий, сооружений,
+									определение возможности
+									установки объекта
+									наружной рекламы,
+									консультации</h3>
+								<p class="section-paragraf">Оценка и сведения о техническом состоянии 
+									элементов строительных конструкций здания, 
+									на котором предполагается установка конструкции</p>
+								<button class="show_popup button-basic button-service2" rel="popup1"><a href="#">Заказать</a></button>		
+
+                            </div>
+	            		</div>
+	            </div>
+	        </div>    
+    	</section>
+    	<!--//услуга4-->
+    </main>
+    <!--//наши услуги -->
+    <section class="order order1">
+    	
+    </section>
 
 
 	<!--[if lt IE 9]>
@@ -124,7 +410,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="libs/jquery/jquery-1.11.2.min.js"><\/script>')</script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/jquery.validate/jquery.validate.js"></script>
+	<script src="libs/jquery.maskedinput.js"></script>
 
 	<script src="js/main.js"></script>
+	<script src="js/form.js"></script>
 </body>
 </html>

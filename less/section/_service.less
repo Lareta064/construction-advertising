@@ -1,0 +1,133 @@
+.service__block{
+	width: 100%;
+	
+}
+.block-img1,
+.block-img3,
+ .block-img5,
+ .block-img7{
+	position: relative;
+	padding-top: 35px;
+}
+.block-grey {
+	background-color: #eee;
+	padding-top: 130px;
+	padding-bottom: 90px;
+}
+
+.block-img2,
+.block-img4,
+.block-img6,
+.block-img8{
+	position: relative;
+	padding-top: 80px;
+}
+
+.service__block2 {
+	background-color: #fff;
+	padding-top: 130px;
+	padding-bottom: 90px;
+}
+
+.service__block-text {
+	text-align: right;
+}
+.servise-description {
+	margin-bottom: 40px;
+}
+.section-paragraf {
+	margin-bottom: 200px;
+}
+.button-service1,
+.button-service2  {
+	display: block;
+	width: 400px;
+	height: 98px;
+	float: right;
+	text-align: center;
+
+	&:hover{
+		background-color: rgb(134, 172, 239);
+		 background: linear-gradient(to right, rgb(134, 172, 239) 50%, rgb(134, 172, 239) 66%);
+	}
+	
+}
+.button-service2 {
+	float: left;
+}
+.button-service1 a,
+.button-service2 a{
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+	padding: 10px;
+     &:hover{
+     	color: #eee;
+     }
+}
+
+
+.block-img1::before,
+.block-img3::before,
+.block-img5::before,
+.block-img7::before{
+    content:"";
+	position: absolute;
+	top: -130px;
+	left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    z-index: 1;
+}
+.block-img2::before,
+.block-img4::before,
+.block-img6::before,
+.block-img8::before{
+	content:"";
+	position: absolute;
+	top: -130px;
+	right: 0;
+	//width: 111px;
+    //height: 135px;
+    //background-image: url("../img/icons/04.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    z-index: 1;
+}
+.block-img1::before{
+	 width: 60px;
+    height: 145px;
+    background-image: url("../img/icons/01.png");
+}
+.block-img2::before{
+	width: 130px;
+    height: 185px;
+    background-image: url("../img/icons/02.png");
+}
+.block-img3::before{
+	width: 97px;
+    height: 140px;
+    background-image: url("../img/icons/03.png");
+    }
+.block-img4::before{	
+	width: 111px;
+    height: 135px;
+    background-image: url("../img/icons/04.png");    
+}
+.block-img6::before{
+	width: 100px;
+    height: 140px;
+    background-image: url("../img/icons/06.png");
+}
+.block-img7::before{
+	width: 101px;
+    height: 135px;
+    background-image: url("../img/icons/07.png");
+}
+.block-img8::before{
+	width: 101px;
+    height: 140px;
+    background-image: url("../img/icons/08.png");
+}
