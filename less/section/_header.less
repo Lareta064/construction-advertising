@@ -28,12 +28,12 @@ header {
 }
 .header_block-content {
 	
-	width: 60%;
+	width: 80%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1200px;
-	
+	flex-direction: column;
 	position: absolute;
 	top: 45%;
 	left: 50%;
@@ -45,6 +45,7 @@ header {
 	z-index: 2;
 	@media (min-width: 768px){
        width: 90%;
+       flex-direction: row;
      }
      @media (min-width: 992px){
        width: 80%;
@@ -58,13 +59,17 @@ header {
 }
 
 .header-title h1{
+	text-align: center;
+	font-size: 40px;
+	line-height: 48px;
 	color: #fff;
 	font-family: 'Clear Sans Bold';
 	text-transform: uppercase;
 
 	@media (min-width: 768px){
+	text-align: left;
 	font-size: 46px;
-	line-height: 48px;}
+	}
 
 	 @media (min-width: 900px){
 	font-size: 50px;
