@@ -1,11 +1,7 @@
-.header__contact-form {
-	position: absolute;
-	top: 32%;
-	left: 55%;
 
-	width: 470px;
-	height: 515px;
-	border-radius: 30px;
+.header__contact-form {
+	
+	border-radius: 18px;
 	background-color: #fff;
 	padding: 60px 25px 30px;
 
@@ -17,31 +13,81 @@
 		
 	}
 }
+.header__contact-form {
+	display: none;
+	@media (min-width: 768px){
+		display: block;
+    	width: 48%;}
+    @media (min-width: 992px){
+    	width: 40%;}
+	
+}
+.header__contact-form {
+    @media (min-width: 768px){
+		padding: 20px 15px 20px;}
+
+	@media (min-width: 992px){
+		padding: 30px 15px 20px;}
+
+    @media (min-width: 1600px){
+		padding: 60px 25px 30px;}
+	
+}
 .header__contact-form input[type="text"],
  .header__contact-form input[type="submit"]{
  	display: block;
 	width: 95%;
-	padding: 18px;
+	padding: 6px;
 	border-radius: 10px;
     text-transform: uppercase;
     background-color: #e3e3e3;
     color: #000;
-    margin-bottom: 26px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+     @media (min-width: 768px){
+    margin-bottom: 12px;  
+    padding: 12px;    
+    }
+    @media (min-width: 992px){
+    margin-bottom: 12px;  
+    padding: 12px;    
+    }
+
+    @media (min-width: 1200px){
+        margin-bottom: 24px;
+     }
 }
 input[type="checkbox"]{
 	width: 20px;
 	height: 20px;
+	@media (min-width: 768px){
+		width: 14px;
+	   height: 14px;
+	}
+	@media (min-width: 992px){
+		width: 16px;
+	   height: 16px;
+	}
+	@media (min-width: 1200px){
+		width: 20px;
+	   height: 20px;
+	}
 }
 label.subscribe {
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: 400;
 	display: inline-block;
 	padding-left: 15px;
+	@media (min-width: 1200px){
+     font-size: 12px;
+   }
 }
 .header__contact-form input[type="submit"]{
 background: rgb(160, 140, 255);
-background: -webkit-linear-gradient(90deg, rgb(160, 140, 255) 48%, rgb(134, 172, 239) 66%);
-background: -o-linear-gradient(90deg, rgb(160, 140, 255) 48%, rgb(134, 172, 239) 66%);
+background: -webkit-linear-gradient(90deg, rgb(159, 140, 238) 50%, rgb(134, 173, 233) 66%);
+background: -o-linear-gradient(90deg, rgb(159, 140, 238) 50%, rgb(134, 173, 233) 66%);
 outline: none !important;
 &:hover {
 	background-color: rgb(134, 172, 239);}
