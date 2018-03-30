@@ -36,7 +36,7 @@
 	<!-- Здесь пишем код -->
 	<!--первый экран-->
     <header>
-    	<div class="top-panel">
+    	<div class="top-panel" id="top">
     		<div class="container">
     			<div class="top-panel__content">
 		    		<div class="top-panel__logo clearfix">
@@ -82,7 +82,7 @@
 	        	<button class="show_popup button-basic" rel="popup1"><a href="#">Получить расчет и сроки</a></button>
 	        </div>
 	        <!--Mouse scroll -->
-	         <a href="#resume" class="mouse_scroll">
+	         <a href="#service" class="mouse_scroll">
 	            <div class="mouse">
 	              <div class="wheel"></div>
 	            </div>
@@ -159,7 +159,7 @@
     </section>
     <!--о нас -->
     <!--наши услуги -->
-    <main class="service">
+    <main class="service" id="service">
     	<h2 class="section-head">
     			НАШИ УСЛУГИ
     	</h2>
@@ -510,7 +510,7 @@
     		<h2 class="section-head">Проект включает в себя</h2>
              <div class="project-block">
                 <div class="project-block-head">
-             	  <h2 class="order-head ">Графическая часть</h2>
+             	  <h2>Графическая часть</h2>
              	</div> 
              	<div class="project-block-list">
 	             	<ul>
@@ -520,6 +520,35 @@
 	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Спецификация используемых материалов</li>
 	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Схема электроснабжения и подключения</li>
 	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Графический чертеж с точками освещения</li>
+	             	</ul>
+	            </div>  	
+             </div>
+               <div class="project-block">
+                <div class="project-block-head">
+             	  <h2>Текстовая часть</h2>
+             	</div> 
+             	<div class="project-block-list">
+	             	<ul>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Расчёт статических, снеговых и ветровых нагрузок</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Прочностные расчеты</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Мероприятия по обеспечению пожарной безопасности</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Указания по изготовлению,хранению, транспортировке, 
+						монтажу, наладке, эксплуатации, 
+						техническому обслуживанию, 
+						ремонту, демонтажу и утилизации 
+						рекламной конструкции</li>
+	             	</ul>
+	            </div>  	
+             </div>
+               <div class="project-block">
+                <div class="project-block-head">
+             	  <h2>При необходимости в случае отсутствия лицензии СРО</h2>
+             	</div> 
+             	<div class="project-block-list">
+	             	<ul class="padding-top-200">
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Экспертное заключение, содержащее вывод о соответствии проекта рекламной конструкции <b>СНИП</b>ам и <b>ГОСТ</b>ам.</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Копия свидетельства <b>СРО»</b></li>
+	             		
 	             	</ul>
 	            </div>  	
              </div>
@@ -672,9 +701,32 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvX6LBP5vPcv5WeKT3DurPtnQ1XIA50Ws&callback=initMap">
     </script>
-
     <!--//карта с маркерами -->
-
+    <footer>
+	    <div class="top-panel">
+	    		<div class="container">
+	    			<div class="top-panel__content">
+			    		<div class="top-panel__logo clearfix">
+			    			<a href="#top"><img src="img/logo4.png" class="logo-img img-responsive" alt="Logo"><a>
+			    			<div class="logo-text">
+			    				<h2>Project-online</h2>
+			    				<p>Сервис по разработке проектов<br>рекламных конструкций</p>
+			    			</div>
+			    		</div>
+			    		<div class="social">
+			    			<p class="social-head">Мы в социальных сетях</p>
+			    			<a href="#" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+			    			<a href="#" target="_blank"><i class="fab fa-2x fa-vk"></i></a>
+			    		</div>
+			    		<div class="top-panel__contact">
+				    		<div><i class="fas fa-phone-square"></i><a href="tel:+79312109155">8(931) 210-91-55</a></div>
+				    		<div><i class="far fa-clock"></i><span>9:00 - 23:00</span></div>
+				    		<div><i class="far fa-envelope"></i><a href="step411@mail.ru">step411@mail.ru</a></div>
+			    		</div>
+			    	</div>	
+			    </div>
+	     </div>
+    </footer>
 
 
 	<!--[if lt IE 9]>
@@ -687,6 +739,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="libs/jquery/jquery-1.11.2.min.js"><\/script>')</script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="libs/jquery.validate/jquery.validate.js"></script>
 	<script src="libs/jquery.maskedinput.js"></script>

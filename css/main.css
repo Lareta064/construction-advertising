@@ -140,6 +140,7 @@ div.block-align-left {
 #map {
   height: 400px;
   width: 100%;
+  margin-bottom: 0;
 }
 /*
  * Box-sizing-model
@@ -224,6 +225,7 @@ textarea {
 @media (min-width: 768px) {
   .top-panel {
     height: 90px;
+    padding-top: 10px;
   }
 }
 @media (min-width: 1600px) {
@@ -268,6 +270,12 @@ textarea {
 .logo-img {
   float: left;
   padding-top: 10px;
+}
+@media (min-width: 1600px) {
+  .logo-text,
+  .logo-img {
+    padding-top: 20px;
+  }
 }
 .logo-text {
   color: #fff;
@@ -320,8 +328,8 @@ textarea {
   width: 100%;
   height: 300px;
   background: #9f8cee;
-  background: -webkit-gradient(linear, left top, right top, color-stop(45%, #9f8cee), color-stop(66%, #86ade9));
-  background: linear-gradient(to right, #9f8cee 45%, #86ade9 66%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(29%, #9f8cee), color-stop(76%, #86ade9));
+  background: linear-gradient(to right, #9f8cee 29%, #86ade9 76%);
 }
 @media (min-width: 768px) {
   .order {
@@ -794,8 +802,8 @@ label.subscribe {
 }
 .object input[type="submit"] {
   background: #9f8cee;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #9f8cee), color-stop(66%, #86ade9));
-  background: linear-gradient(to right, #9f8cee 50%, #86ade9 66%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(29%, #9f8cee), color-stop(76%, #86ade9));
+  background: linear-gradient(to right, #9f8cee 29%, #86ade9 76%);
   outline: none !important;
 }
 .object input[type="submit"]:hover {
@@ -849,8 +857,8 @@ label.error {
   color: #000;
   margin-top: 40px;
   background: #9f8cee;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #9f8cee), color-stop(66%, #86ade9));
-  background: linear-gradient(to right, #9f8cee 50%, #86ade9 66%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(29%, #9f8cee), color-stop(76%, #86ade9));
+  background: linear-gradient(to right, #9f8cee 29%, #86ade9 76%);
   outline: none !important;
 }
 .button-basic:hover {
@@ -1375,6 +1383,32 @@ header {
 .project-block-head h2 {
   color: #949bec;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  .project-block-head h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .project-block-head h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .project-block-head h2 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+}
+@media (min-width: 1600px) {
+  .project-block-head h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 .project-block-list {
   width: 50%;
@@ -1389,11 +1423,44 @@ header {
   padding: 100px 40px 80px;
 }
 .project-block-list ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .project-block-list ul li span {
   color: #949bec;
   margin-right: 15px;
   font-size: 12px;
+}
+ul.padding-top-200 {
+  padding-top: 200px;
+}
+footer {
+  background-color: #393939;
+  padding-top: 30px;
+  width: 100%;
+  height: 200px;
+}
+@media (min-width: 1600px) {
+  footer {
+    height: 280px;
+  }
+}
+footer .top-panel {
+  height: 100%;
+}
+.social,
+.social a {
+  color: #fff;
+}
+.social a:hover {
+  color: #777;
+}
+.social-head {
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.social .fa-instagram {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=main.css.map */

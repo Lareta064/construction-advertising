@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
 	
-	/* Call plugins hrere ...
+	
     //плавная прокрутка
-    $("a,nav a,a[href='#'],a[rel='m_PageScroll2id'],a.PageScroll2id, a.mouse_scroll").mPageScroll2id({
+    $("a,a[href='#'],a[rel='m_PageScroll2id'],a.PageScroll2id, a.mouse_scroll").mPageScroll2id({
       highlightSelector:"nav a"
-  });*/
+  });
 
 		    //открываем поп 
 		$('.show_popup').click(function() { // Вызываем функцию по нажатию на кнопку 

@@ -15,8 +15,27 @@
 	& h2 {
 		color: #949bec;
 		font-weight: 700;
+		font-size: 20px;
+	  line-height: 20px;
+     @media (min-width: 768px){
+          font-size: 32px;
+	     line-height: 32px;
+       }
+        @media (min-width: 992px){
+          font-size: 40px;
+	     line-height: 40px;
+       }
+       @media (min-width: 1200px){
+         font-size: 44px;
+	     line-height: 44px;
+    }
+       @media (min-width: 1600px){
+          font-size: 60px;
+	     line-height: 60px;}
+    
+       }	
 	}
-}
+
 .project-block-list {
 	width: 50%;
 	margin: auto; 
@@ -33,10 +52,13 @@
 	}
 }
 .project-block-list ul li {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	& span {
 		color:  #949bec;
 		margin-right: 15px;
 		font-size: 12px;
 	}
-}
+}	
+ul.padding-top-200 {
+		padding-top: 200px;
+	}
