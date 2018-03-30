@@ -29,6 +29,45 @@ $(document).ready(function() {
 		  )
 		  wow.init();
 		   new WOW().init();*/
+		   
+		   	$('#types-owl').owlCarousel({
+		   		//margin:30,
+		   		loop:true,
+		   		dots: false,
+		   		autoplay:true,
+		   		nav: true, // навигация
+   			 // Перепишем текст кнопок
+    			// используем Font Awesome для добавления стрелок
+    			navText: ['<span class="glyphicon glyphicon-arrow-left"></span>',
+             '<span class="glyphicon glyphicon-arrow-right"></span>'],
+		   		smartSpeed:1000, 
+                autoplayTimeout:2000, 
+		   		responsive:{
+		   			0:{items:1},
+		   			600:{items:2},
+		   			1000:{items:4}
+		   		}
+		   	});
+
+		   		$('#reviews-owl').owlCarousel({
+		   		//margin:30,
+		   		loop:true,
+		   		dots: false,
+		   		autoplay:true,
+		   		nav: true, // навигация
+   			 // Перепишем текст кнопок
+    			// используем Font Awesome для добавления стрелок
+    			navText: ['<span class="glyphicon glyphicon-arrow-left"></span>',
+             '<span class="glyphicon glyphicon-arrow-right"></span>'],
+		   		smartSpeed:2000, 
+                autoplayTimeout:3000, 
+		   		responsive:{
+		   			0:{items:1},
+		   			600:{items:1},
+		   			1000:{items:1}
+		   		}
+		   	});
+		   
 
 	
 });

@@ -37,14 +37,20 @@
 }
 .section-paragraf {
 	margin-bottom: 200px;
+	@media (min-width: 768px){
+      margin-bottom: 100px;
+	}
 }
 .button-service1,
 .button-service2  {
 	display: block;
-	width: 400px;
+	width: 350px;
 	height: 98px;
 	float: right;
 	text-align: center;
+	@media (min-width: 992px){
+      width: 400px;
+	}
 
 	&:hover{
 		background-color: rgb(134, 172, 239);
@@ -58,9 +64,12 @@
 .button-service1 a,
 .button-service2 a{
 	color: #fff;
-	font-size: 40px;
+	font-size: 36px;
 	text-transform: uppercase;
 	padding: 10px;
+	 @media (min-width: 992px){
+     font-size: 40px;
+	}
      &:hover{
      	color: #eee;
      }
@@ -115,6 +124,11 @@
 	width: 111px;
     height: 135px;
     background-image: url("../img/icons/04.png");    
+}
+.block-img5::before{
+	width: 103px;
+    height: 137px;
+    background-image: url("../img/icons/05.png");
 }
 .block-img6::before{
 	width: 100px;
