@@ -137,6 +137,10 @@ a {
 div.block-align-left {
   text-align: left;
 }
+#map {
+  height: 400px;
+  width: 100%;
+}
 /*
  * Box-sizing-model
  */
@@ -338,6 +342,9 @@ textarea {
   .order {
     height: 1000px;
   }
+}
+.order3 {
+  margin-bottom: 0;
 }
 .order-content {
   position: relative;

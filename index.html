@@ -579,6 +579,41 @@
     	</div>
     </section>
     <!--//третий голубой блок -->
+    <!--//карта с маркерами -->
+	
+	
+    <div id="map"></div>
+  	<script>
+      function initMap() {
+        var aero = {lat: 55.790617, lng: 37.547492000000034};
+        var sokol = {lat: 55.7879405, lng: 37.680486900000005};
+        var izm = {lat: 55.789556, lng: 37.74765000000002};
+        var center = {lat: 55.781646, lng: 37.614079};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: center
+        });
+        var marker = new google.maps.Marker({
+          position: aero,
+          map: map
+      		});
+          var marker = new google.maps.Marker({
+          position: sokol,
+          map: map
+          	});
+          var marker = new google.maps.Marker({
+          position: izm,
+          map: map
+        	});
+      }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvX6LBP5vPcv5WeKT3DurPtnQ1XIA50Ws&callback=initMap">
+    </script>
+
+    <!--//третий голубой блок -->
+
 
 
 	<!--[if lt IE 9]>
