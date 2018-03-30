@@ -60,26 +60,24 @@
 	        		<h1>РАЗРАБОТКА ПРОЕКТОВ РЕКЛАМНЫХ КОНСТРУКЦИЙ</h1>
 	        	</div>
 	        	
-	        		<div class="popup" id="popup1">
+	        		<div class="popup hidden-xs" id="popup1">
                         <div class="object">
 	        		       <p>Заполните форму на бесплатный расчет заявки и через 10 минут Вы узнаете стоимость и сроки</p>
 						<form id="contact-form" action= "php/mail.php" method= "POST"> 
 							<!-- Hidden Required Fields -->
-              					<input type="hidden" name="project_name" value="Куб Квадрат">
-              					<input type="hidden" name="admin_email" value="info@kubkvadrat.ru">
+              					<input type="hidden" name="project_name" value="Рекламные конструкции">
+              					<input type="hidden" name="admin_email" value="lareta1@yandex.ru">
               					<input type="hidden" name="form_subject" value="Сообщение с сайта">
             					<!-- END Hidden Required Fields -->
 							<input type="text" name="name" id="name" placeholder="введите ваше имя"/>
 							<input type="text" name="email" id="email" placeholder="введите ваш email"/>
 							<input type= "submit" value="получить расчет и сроки">
-							<input type="checkbox" id="subscribe"/>
+							<input type="checkbox" name="subscribe" id="subscribe"/>
 							<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label> 
 						</form>
 						<div id="answer"></div>    
          				</div>
     				</div>
-	        	
-	        	<button class="show_popup button-basic" rel="popup1"><a href="#">Получить расчет и сроки</a></button>
 	        </div>
 	        <!--Mouse scroll -->
 	         <a href="#service" class="mouse_scroll">
@@ -95,6 +93,26 @@
             <!--End Mouse scroll -->	
         </div>
     </header>
+    <div class="visible-xs">
+    	<div class="popup" id="popup1">
+                        <div class="object mobile-form">
+	        		       <p>Заполните форму на бесплатный расчет заявки и через 10 минут Вы узнаете стоимость и сроки</p>
+						<form id="contact-form" action= "php/mail.php" method= "POST"> 
+							<!-- Hidden Required Fields -->
+              					<input type="hidden" name="project_name" value="Рекламные конструкции">
+              					<input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+              					<input type="hidden" name="form_subject" value="Сообщение с сайта">
+            					<!-- END Hidden Required Fields -->
+							<input type="text" name="name" id="name" placeholder="введите ваше имя"/>
+							<input type="text" name="email" id="email" placeholder="введите ваш email"/>
+							<input type= "submit" value="получить расчет и сроки">
+							<input type="checkbox" name="subscribe" id="subscribe"/>
+							<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label> 
+						</form>
+						<div id="answer"></div>    
+         				</div>
+    				</div>
+    </div>
 
     <!--первый экран-->
     <!--о нас -->
@@ -182,7 +200,7 @@
 									крепления)</h3>
 								<p class="section-paragraf">Рабочий проект рекламной конструкции,
 									содержащий все необходимое</p>
-								<button class="show_popup button-basic button-service1" rel="popup1"><a href="#">Заказать</a></button>		
+								<button class="show_popup button-basic button-service1" rel="popup2"><a href="#">Заказать</a></button>		
 
                             </div>
 	            		</div>
@@ -212,7 +230,7 @@
 									крепления)</h3>
 								<p class="section-paragraf">Рабочий проект рекламной конструкции,
 									содержащий все необходимое</p>
-								<button class="show_popup button-basic button-service2" rel="popup1"><a href="#">Заказать</a></button>		
+								<button class="show_popup button-basic button-service2" rel="popup2"><a href="#">Заказать</a></button>		
 
                             </div>
 	            		</div>
@@ -243,7 +261,7 @@
 									крепежных элементов и других частей рекламного 
 									носителя, расчёты нагрузок (ветер, снег),
 									прочностные расчеты, расчеты электрообудования)</p>
-								<button class="show_popup button-basic button-service1" rel="popup1"><a href="#">Заказать</a></button>		
+								<button class="show_popup button-basic button-service1" rel="popup2"><a href="#">Заказать</a></button>		
 
                             </div>
 	            		</div>
@@ -275,7 +293,7 @@
 									(экспертиза). Техническая документация должна 
 									быть разработана организацией, которая имеет 
 									допуск СРО на проектирование.</p>
-								<button class="show_popup button-basic button-service2" rel="popup1"><a href="#">Заказать</a></button>		
+								<button class="show_popup button-basic button-service2" rel="popup2"><a href="#">Заказать</a></button>		
 
                             </div>
 	            		</div>
@@ -302,7 +320,7 @@
 									предложения по конструкциям рекламной 
 									установки нужны предварительные чертежи и 
 									объемы расходного материала рекламоносителя.</p>
-								<button class="show_popup button-basic button-service1" rel="popup1"><a href="#">Заказать</a></button>	
+								<button class="show_popup button-basic button-service1" rel="popup2"><a href="#">Заказать</a></button>	
                             </div>
 	            		</div>
 	            </div>
@@ -330,7 +348,7 @@
 										наглядности объекта. То, как будет
 										выглядеть будущая рекламная конструкия
 										покажет именно проект визуализации.</p>
-								<button class="show_popup button-basic button-service2" rel="popup1"><a href="#">Заказать</a></button>		
+								<button class="show_popup button-basic button-service2" rel="popup2"><a href="#">Заказать</a></button>		
 
                             </div>
 	            		</div>
@@ -357,7 +375,7 @@
 									прорабатываются вопросы рациональной 
 									технологии и организации строительства 
 									рекламного объекта</p>
-								<button class="show_popup button-basic button-service1" rel="popup1"><a href="#">Заказать</a></button>	
+								<button class="show_popup button-basic button-service1" rel="popup2"><a href="#">Заказать</a></button>	
                             </div>
 	            		</div>
 	            </div>
@@ -387,7 +405,7 @@
 								<p class="section-paragraf">Оценка и сведения о техническом состоянии 
 									элементов строительных конструкций здания, 
 									на котором предполагается установка конструкции</p>
-								<button class="show_popup button-basic button-service2" rel="popup1"><a href="#">Заказать</a></button>		
+								<button class="show_popup button-basic button-service2" rel="popup2"><a href="#">Заказать</a></button>		
 
                             </div>
 	            		</div>
@@ -413,7 +431,7 @@
     					ОСТАВЬТЕ ЗАЯВКУ И НАШ
 						МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ
     				</p>
-    				<button class="show_popup button-white" rel="popup1"><a class="servise-description" href="#">ОСТАВИТЬ ЗАЯВКУ</a></button>			
+    				<button class="show_popup button-white" rel="popup2"><a class="servise-description" href="#">ОСТАВИТЬ ЗАЯВКУ</a></button>			
     			</div>
     		</div>
     	</div>
@@ -572,7 +590,7 @@
 						5-ой конструкции
 						выполняется бесплатно
     				</p>
-    				<button class="show_popup button-white" rel="popup1"><a class="servise-description" href="#">ОСТАВИТЬ ЗАЯВКУ</a></button>			
+    				<button class="show_popup button-white" rel="popup2"><a class="servise-description" href="#">ОСТАВИТЬ ЗАЯВКУ</a></button>			
     			</div>
     		</div>
     	</div>
@@ -607,7 +625,7 @@
     						<p class="section-paragraf">После выполнения и отправки, ждем окончательного расчета. При необходимости распечатываем 
 							документацию и доставляем ее курьером.</p>
     					</div>
-    					<button class="show_popup button-basic button-service2 button-center" rel="popup1"><a href="#">Заказать</a></button>	
+    					<button class="show_popup button-basic button-service2 button-center" rel="popup2"><a href="#">Заказать</a></button>	
     				</div>
     			</div>
     		</div>
@@ -662,7 +680,7 @@
 						наш менеджер свяжется 
 						с вами в близжайшее время
     				</p>
-    				<button class="show_popup button-white" rel="popup1"><a class="servise-description" href="#">ОСТАВИТЬ ЗАЯВКУ</a></button>			
+    				<button class="show_popup button-white" rel="popup2"><a class="servise-description" href="#">ОСТАВИТЬ ЗАЯВКУ</a></button>			
     			</div>
     		</div>
     	</div>
@@ -702,6 +720,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvX6LBP5vPcv5WeKT3DurPtnQ1XIA50Ws&callback=initMap">
     </script>
     <!--//карта с маркерами -->
+
     <footer>
 	    <div class="top-panel">
 	    		<div class="container">
@@ -727,7 +746,29 @@
 			    </div>
 	     </div>
     </footer>
+    <!--форма связи-->
+    <div class="overlay_popup"></div>
+     <div class="popup2" id="popup2">
+                        <div class="object2">
+	        		       <p>Заполните форму и наш менеджер свяжется с вами</p>
+						<form id="contact-form-lower" action= "php/mail.php" method= "POST"> 
+							<!-- Hidden Required Fields -->
+              					<input type="hidden" name="project_name" value="Рекламные конструкции">
+              					<input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+              					<input type="hidden" name="form_subject" value="Сообщение с сайта">
+            					<!-- END Hidden Required Fields -->
+							<input type="text" name="name" id="name2" placeholder="введите ваше имя"/>
+							<input type="text" name="email" id="email2" placeholder="введите ваш email"/>
+							<input type= "submit" value="получить расчет и сроки">
+							<input type="checkbox" id="subscribe2" name="subscribe"/>
+							<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label>
+							<a href="#" id="form-close"><i class="fas fa-times"></i></a> 
+						</form>
+						<div id="answer"></div> 
 
+         				</div>
+    				</div>
+    <!--//форма связи-->
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>

@@ -45,7 +45,7 @@ function saveUserDataInFile($text){
 saveUserDataInFile($message);
 
 
-// header('location: ../thankyou.html');
-echo "<div class='contact-form__success'>Сообщение успешно отправлено!</div> ";
+header('location: ../thankyou.html');
+// echo "<div class='contact-form__success'>Сообщение успешно отправлено!</div> ";
 
 ?>
