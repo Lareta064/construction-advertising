@@ -505,6 +505,29 @@
     </section>
     <!--//виды конструкций -->
 
+    <section class="project">
+    	<div class="container">
+    		<h2 class="section-head">Проект включает в себя</h2>
+             <div class="project-block">
+                <div class="project-block-head">
+             	  <h2 class="order-head ">Графическая часть</h2>
+             	</div> 
+             	<div class="project-block-list">
+	             	<ul>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Подробный графичекий чертёж конструкции и деталей</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Конструктивные решения по монтажу несущих элементов</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Узлы крепления</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Спецификация используемых материалов</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Схема электроснабжения и подключения</li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Графический чертеж с точками освещения</li>
+	             	</ul>
+	            </div>  	
+             </div>
+        </div>
+    </section>    
+
+   			
+   			
     <!--второй голубой блок-->
     <section class="order order2">
     	<div class="container-fluid">
@@ -527,6 +550,42 @@
     </section> 
     <!--//второй голубой блок -->
 
+     <!--как мы работаем-->
+    <section class="how-wee-work">
+    	<div class="container">
+    		<h2 class="section-head">Как мы работаем</h2>
+    		<div class="row">
+    			<div class="col-sm-6 col-sm-offset-3">
+    				<div class="work-list text-center">
+    					<div class="work-list-item">
+    						<img src="img/work/1.png" class="img-responsive">
+    						<p class="section-paragraf">Вы оставляете заявку на сайте или звоните лично</p>
+    					</div>
+    					<div class="work-list-item">
+    						<img src="img/work/2.png" class="img-responsive">
+    						<p class="section-paragraf">Обсуждаем Ваш проект</p>
+    					</div>
+    					<div class="work-list-item">
+    						<img src="img/work/3.png" class="img-responsive">
+    						<p class="section-paragraf">Обговариваем сроки и стоимость работ</p>
+    					</div>
+    					<div class="work-list-item">
+    						<img src="img/work/4.png" class="img-responsive">
+    						<p class="section-paragraf">Приступаем к выполнению после внесения предоплаты и заключения договора</p>
+    					</div>
+    					<div class="work-list-item">
+    						<img src="img/work/5.png" class="img-responsive">
+    						<p class="section-paragraf">После выполнения и отправки, ждем окончательного расчета. При необходимости распечатываем 
+							документацию и доставляем ее курьером.</p>
+    					</div>
+    					<button class="show_popup button-basic button-service2 button-center" rel="popup1"><a href="#">Заказать</a></button>	
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+     <!--//как мы работаем-->
+    <!--отзывы-->
     <section class="reviews">
    		<div class="container">
    			<h2 class="section-head">ОТЗЫВЫ</h2>
@@ -556,7 +615,8 @@
   					</div>
   				</div>
   		</div>
-  	</section>					
+  	</section>
+  	<!--отзывы-->					
     <!--третий голубой блок -->
     <section class="order order3">
     	<div class="container-fluid">
@@ -579,7 +639,7 @@
     	</div>
     </section>
     <!--//третий голубой блок -->
-    <!--//карта с маркерами -->
+    <!--карта с маркерами -->
     <div id="map"></div>
   	<script>
       function initMap() {
@@ -593,15 +653,18 @@
         });
         var marker = new google.maps.Marker({
           position: aero,
-          map: map
+          map: map,
+          title: "Аэростар"
       		});
           var marker = new google.maps.Marker({
           position: sokol,
-          map: map
+          map: map,
+          title: "Холидей Инн Москва Сокольники"
           	});
           var marker = new google.maps.Marker({
           position: izm,
-          map: map
+          map: map,
+          title: "Гостиница Измайлово Бета"
         	});
       }
     </script>
@@ -610,7 +673,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvX6LBP5vPcv5WeKT3DurPtnQ1XIA50Ws&callback=initMap">
     </script>
 
-    <!--//третий голубой блок -->
+    <!--//карта с маркерами -->
 
 
 
