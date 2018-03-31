@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="libs/owl.carousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="libs/owl.carousel/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="libs/animate.css">
 	
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Fonts -->
@@ -46,14 +47,29 @@
 		    				<p>Сервис по разработке проектов<br>рекламных конструкций</p>
 		    			</div>
 		    		</div>
-		    		<div class="top-panel__contact">
-			    		<div><i class="fas fa-phone-square"></i><a href="tel:+79312109155">8(931) 210-91-55</a></div>
-			    		<div><i class="far fa-clock"></i><span>9:00 - 23:00</span></div>
-			    		<div><i class="far fa-envelope"></i><a href="step411@mail.ru">step411@mail.ru</a></div>
+		    		<div class="top-panel__contact hidden-xs">
+			    		<div class="contact-item item-phone"><a href="tel:+79312109155">8(931) 210-91-55</a></div>
+			    		<div class="contact-item item-clock"><span>9:00 - 23:00</span></div>
+			    		<div class="contact-item item-mail"><a href="step411@mail.ru">step411@mail.ru</a></div>
 		    		</div>
+		    		<!--Иконка навигации для маленьких экранов-->
+			        <button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+			            <span>toggle menu</span>
+			        </button>
+			        <!--Иконка навигации для маленьких экранов-->
 		    	</div>	
 		    </div>
         </div>
+        <!--скрытое меню-->
+        <div class="header__menu" id="topnav">
+        	<ul class="header__nav">
+        		<li><a href="#aboutus">О нас</a></li>
+        		<li><a href="#servise">Услуги</a></li>
+        		<li><a href="#types">Каталог</a></li>
+        		<li><a href="#footer">Контакты</a></li>
+        	</ul>
+        </div>
+        <!--скрытое меню-->
         <div class="header_block">
         	<div class="header_block-content">
 	        	<div class="header-title">
@@ -72,8 +88,8 @@
 							<input type="text" name="name" id="name" placeholder="введите ваше имя"/>
 							<input type="text" name="email" id="email" placeholder="введите ваш email"/>
 							<input type= "submit" value="получить расчет и сроки">
-							<input type="checkbox" name="subscribe" id="subscribe"/>
-							<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label> 
+							<input type="checkbox" name="terms" id="terms"/>
+							<label for="terms" class="subscribe">Даю согласие на обработку персональных данных</label> 
 						</form>
 						<div id="answer"></div>    
          				</div>
@@ -97,26 +113,26 @@
     	<div class="popup" id="popup1">
                         <div class="object mobile-form">
 	        		       <p>Заполните форму на бесплатный расчет заявки и через 10 минут Вы узнаете стоимость и сроки</p>
-						<form id="contact-form" action= "php/mail.php" method= "POST"> 
+						<form id="contact-form-mobile" action= "php/mail.php" method= "POST"> 
 							<!-- Hidden Required Fields -->
               					<input type="hidden" name="project_name" value="Рекламные конструкции">
               					<input type="hidden" name="admin_email" value="lareta1@yandex.ru">
               					<input type="hidden" name="form_subject" value="Сообщение с сайта">
             					<!-- END Hidden Required Fields -->
-							<input type="text" name="name" id="name" placeholder="введите ваше имя"/>
-							<input type="text" name="email" id="email" placeholder="введите ваш email"/>
+							<input type="text" name="name" id="name-mobile" placeholder="введите ваше имя"/>
+							<input type="text" name="email" id="email-mobile" placeholder="введите ваш email"/>
 							<input type= "submit" value="получить расчет и сроки">
-							<input type="checkbox" name="subscribe" id="subscribe"/>
-							<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label> 
+							<input type="checkbox" name="terms" id="terms-mobile"/>
+							<label for="terms" class="subscribe">Даю согласие на обработку персональных данных</label> 
 						</form>
 						<div id="answer"></div>    
          				</div>
     				</div>
-    </div>
+                </div>
 
     <!--первый экран-->
     <!--о нас -->
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
     	<div class="container">
     		<h2 class="section-head">
     			НЕМНОГО О НАС
@@ -439,7 +455,7 @@
     <!--//первый голубой блок -->
 
     <!--виды конструкций -->
-    <section class="types">
+    <section class="types" id="types">
    		<div class="container-fluid">
    			<h2 class="section-head">Виды конструкций</h2>
    				<div class="types-slider">
@@ -565,7 +581,7 @@
              	<div class="project-block-list">
 	             	<ul class="padding-top-200">
 	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Экспертное заключение, содержащее вывод о соответствии проекта рекламной конструкции <b>СНИП</b>ам и <b>ГОСТ</b>ам.</li>
-	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Копия свидетельства <b>СРО»</b></li>
+	             		<li class="section-paragraf"><span class="glyphicon glyphicon-record"></span>Копия свидетельства <b>СРО</b></li>
 	             		
 	             	</ul>
 	            </div>  	
@@ -625,7 +641,7 @@
     						<p class="section-paragraf">После выполнения и отправки, ждем окончательного расчета. При необходимости распечатываем 
 							документацию и доставляем ее курьером.</p>
     					</div>
-    					<button class="show_popup button-basic button-service2 button-center" rel="popup2"><a href="#">Заказать</a></button>	
+    					<button class="show_popup button-basic button-center" rel="popup2"><a href="#">Заказать</a></button>	
     				</div>
     			</div>
     		</div>
@@ -721,26 +737,26 @@
     </script>
     <!--//карта с маркерами -->
 
-    <footer>
+    <footer id="footer">
 	    <div class="top-panel">
-	    		<div class="container">
+	    		<div class="container-fluid">
 	    			<div class="top-panel__content">
-			    		<div class="top-panel__logo clearfix">
+			    		<div class="top-panel__logo">
 			    			<a href="#top"><img src="img/logo4.png" class="logo-img img-responsive" alt="Logo"><a>
 			    			<div class="logo-text">
 			    				<h2>Project-online</h2>
-			    				<p>Сервис по разработке проектов<br>рекламных конструкций</p>
+			    				<p class="logo-hidden-text">Сервис по разработке проектов<br>рекламных конструкций</p>
 			    			</div>
 			    		</div>
 			    		<div class="social">
-			    			<p class="social-head">Мы в социальных сетях</p>
+			    			<p class="social-head visible-lg">Мы в социальных сетях</p>
 			    			<a href="#" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
 			    			<a href="#" target="_blank"><i class="fab fa-2x fa-vk"></i></a>
 			    		</div>
 			    		<div class="top-panel__contact">
-				    		<div><i class="fas fa-phone-square"></i><a href="tel:+79312109155">8(931) 210-91-55</a></div>
-				    		<div><i class="far fa-clock"></i><span>9:00 - 23:00</span></div>
-				    		<div><i class="far fa-envelope"></i><a href="step411@mail.ru">step411@mail.ru</a></div>
+				    		<div class="contact-item item-phone"><a href="tel:+79312109155">8(931) 210-91-55</a></div>
+			    			<div class="contact-item item-clock"><span>9:00 - 23:00</span></div>
+			    			<div class="contact-item item-mail"><a href="step411@mail.ru">step411@mail.ru</a></div>
 			    		</div>
 			    	</div>	
 			    </div>
@@ -760,8 +776,8 @@
 							<input type="text" name="name" id="name2" placeholder="введите ваше имя"/>
 							<input type="text" name="email" id="email2" placeholder="введите ваш email"/>
 							<input type= "submit" value="получить расчет и сроки">
-							<input type="checkbox" id="subscribe2" name="subscribe"/>
-							<label for="subscribe" class="subscribe">Даю согласие на обработку персональных данных</label>
+							<input type="checkbox" id="terms2" name="terms"/>
+							<label for="terms2" class="subscribe">Даю согласие на обработку персональных данных</label>
 							<a href="#" id="form-close"><i class="fas fa-times"></i></a> 
 						</form>
 						<div id="answer"></div> 
@@ -784,6 +800,7 @@
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="libs/jquery.validate/jquery.validate.js"></script>
 	<script src="libs/jquery.maskedinput.js"></script>
+	<script src="libs/wow.js"></script>
 
 	<script src="js/main.js"></script>
 	<script src="js/form.js"></script>

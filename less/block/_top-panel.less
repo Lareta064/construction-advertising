@@ -1,8 +1,8 @@
-.top-panel {
+header .top-panel {
 	width: 100%;
 	height: 80px;
-	//padding-top: 15px;
-	//padding-bottom: 10px;
+	position: fixed;
+	z-index: 10;
 	background-color: #393939;
     @media (min-width: 768px){
 		height: 90px;
@@ -32,9 +32,12 @@ header .top-panel{
 	align-items: left;
 	color: #fff;
 }
+header .top-panel__contact{
+	padding-top: 15px;
+}
 .top-panel__logo {
 	padding-top: 5px;
-	padding-bottom: 5px;
+	//padding-bottom: 5px;
 }
 .logo-text,
 .logo-img {
@@ -44,12 +47,25 @@ header .top-panel{
    	padding-top: 20px;
    }
 }
+.logo-img{
+ width: 78px;
+ padding-top: 5px;
+  @media (min-width: 768px){
+       width: 90px;
+	}
+}
+
+
 .logo-text {
 	color: #fff;
-    margin-left: 35px;
+    margin-left: 10px;
      @media (min-width: 480px){
+       //margin-left: 25px;
+       padding-top: 10px;
+	}
+   
+	@media (min-width: 1200px){
        margin-left: 25px;
-       padding-top: 15px;
 	}
 }
 
@@ -71,12 +87,13 @@ header .top-panel{
 .top-panel__contact {
 	line-height: 22px;
 
-	& a{
-		color: #fff;}
-	& i {
-		margin-right: 12px;
+	& a, & span {
+		color: #fff;
+	   padding-left: 25px;
+	   @media (min-width: 480px){
+       padding-left: 35px;
+	   }
 	}
-	
 }
 .top-panel__contact {
 	@media (min-width: 1200px){
@@ -84,4 +101,19 @@ header .top-panel{
       padding-top: 10px;
     }
 	
+}
+.top-panel__contact .contact-item{
+	margin-bottom: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+.contact-item.item-phone {
+	background-image: url("../img/icons/phone.png");
+}
+.contact-item.item-clock{
+	background-image: url("../img/icons/time.png");
+}
+.contact-item.item-mail{
+	background-image: url("../img/icons/mail.png");
 }

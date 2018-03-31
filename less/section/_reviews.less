@@ -13,8 +13,23 @@
 	align-items: center;
 
 	& p {
-		margin-left:48px;
+		margin-left:25px;
+		font-size: 14px;
+		line-height: 16px;
 		color: #7b8ce6;
+		@media (min-width: 480px){
+			margin-left:35px;
+			font-size: 16px;
+		    line-height: 18px;
+		}
+		@media (min-width: 768px){
+			margin-left:40px;
+			font-size: 18px;
+		    line-height: 24px;
+		}
+		@media (min-width: 1200px){
+			margin-left:48px;
+		}
 	}
 }
 .reviews-slider-img {
@@ -24,7 +39,13 @@
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 60px;
+	margin-bottom: 25px;
+     @media (min-width: 768px){
+			margin-bottom: 45px;
+		}
+		@media (min-width: 1200px){
+			margin-bottom: 60px;
+		}
 }
 /*положение стрелочек слайдера*/
 .reviews .owl-prev, .owl-next {

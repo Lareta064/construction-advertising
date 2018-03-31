@@ -32,9 +32,29 @@
 }
 
 .button-center {
-	float: none;
 	margin-left: auto;
 	margin-right: auto;
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 10px;
+	@media (min-width: 768px){
+     font-size: 36px;}
+	 @media (min-width: 992px){
+     font-size: 40px;
+	}
+     &:hover{
+     	color: #777; }
+     &:active{
+     	color: #fff; }
+}
+	
+.button-center a {
+	font-size: 24px;
+	font-family: "Clear Sans Bold";
+	 @media (min-width: 992px){
+     font-size: 30px;
+	}
 }
 .work-list-item {
 margin-bottom: 45px;}

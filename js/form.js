@@ -63,20 +63,25 @@ $(document).ready(function() {
         terms:{ required: "Согласие на обработку персоналных данных обязательно"} 
     }
 
-    /*messages: {
+  })
+
+  $("#contact-form-mobile").validate({
+    rules: {
+      name: { required: true },
+      email: { required: true, email: true },
+      terms: { required: true },
+      // skype:  { required: true },
       phone: {
-        required: "Пожалуйста, введите номер телефона",
+        required: true,
+        'checkMask': true,
       }
-     // name: "Пожалуйста, введите свое имя",
-      //email: {
-       // required: "Пожалуйста, введите свой email",
-       //email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
-    },*/
-    /*
-    submitHandler: function(form) {
-      ajaxFormSubmit();
+      
+
+    },
+
+    message: { 
+        terms:{ required: "Согласие на обработку персоналных данных обязательно"} 
     }
-    */
 
   })
 
